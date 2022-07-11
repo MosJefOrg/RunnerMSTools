@@ -9,7 +9,7 @@ jobs:
     runs-on: windows-2019
 
     steps:
-      - run: "$PSScriptRoot\VisualStudioHelpers.ps1"
+      - run: '$PSScriptRoot\VisualStudioHelpers.ps1'
         shell: pwsh
       - run: Get-VisualStudioProduct
         shell: pwsh
