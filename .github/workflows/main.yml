@@ -9,9 +9,8 @@ jobs:
     runs-on: windows-2019
 
     steps:
-      - run: '$PSScriptRoot\VisualStudioHelpers.ps1'
-        shell: pwsh
-      - run: Get-VisualStudioProduct
+
+      - run: msbuild.exe /?
         shell: pwsh
       - run: Get-VisualStudioComponents
         shell: pwsh
